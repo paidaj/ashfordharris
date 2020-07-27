@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
         <title>july 23rd, 2020</title>
+        <style>
+            * {
+                margin: 0px;
+            }  
+
+            h3 {
+                margin-bottom: 20px;
+                color:rgb(55, 55, 255);
+            } 
+           
+           
+            .wrapper{
+                background-color:lightgray;
+                height: 250px;
+                padding: 20px;
+            }
+
+            .box{
+                border: 18px solid white;
+                border-radius: 50px;
+                height: 20px;
+                width: 200px;
+                text-align: center;
+                font-weight: 800;
+                font-size: 20px;
+                font-family: arial, helvetica, sans-serif;
+                color: white;
+
+             }
+
+            #orange{
+                background-color: #faa71b;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                animation: slide-in 1s ease-in 0s forwards;
+                opacity: 0;
+            }
+            
+            @keyframes slide-in {
+                from {
+                    transform: translatex(0px);
+
+                }
+
+                to {
+                    transform: translatex(20px);
+                    opacity: 1;
+                }
+                
+            }
+
+
+            #blue{
+                background-color: #005191;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                animation: slide-in 1s ease-in 0.5s forwards;
+                opacity: 0;
+            }
+        </style>
     </head>
     <body>
         <div class="wrapper">
+            <h3>july 23rd, 2020</h3>
             <div id="orange" class="box">
+                <p>orange</p> 
             </div>
             <div id="blue" class="box">
+                <p>blue</p>
         </div>
     </body>
 </html>
