@@ -1,0 +1,23 @@
+.container-fluid{
+    background-color: lightblue;
+    height: 100px;
+    
+}
+.container{
+    background-color: lightcoral;
+
+}
+.container-sm{
+    background-color: lightgreen;
+
+}	
+.container-md{
+    background-color: lightskyblue;
+
+}	
+.container-lg{
+    background-color: limegreen;
+}
+.container-xl{
+    background-color: lightslategrey;
+}
