@@ -3,6 +3,11 @@
     height: 100px;
     
 }
+
+.row{
+    padding: 20px;
+}
+
 .container{
     background-color: lightcoral;
 

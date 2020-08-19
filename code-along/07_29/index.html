@@ -3,96 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bootstrap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font-Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
-
-    <!-- navbar -->
-    <nav class="navbar">
-        <a href="#" class="nav">
-            <img height="30" src="https://images.squarespace-cdn.com/content/55c4ffcfe4b0b6679a5a2ff5/1439433488777-HW2IVF8VYCIGIS6694VD/journilogo.png?content-type=image%2Fpng" alt="">
-        </a>
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="#emojis" class="nav-link active">Emoji</a>
-            </li>
-            <li class="nav-item">
-            </li>   
-                <a href="#emojis" class="nav-link active">Emoji</a>
-            <li class="nav-item">
-            </li>   
-                <a href="#emojis" class="nav-link active">Emoji</a>
-            <li class="nav-item">
-            </li>    
-                <a href="#emojis" class="nav-link active">Emoji</a>
-            <li class="nav-item">
-            </li>  
-                <a href="#emojis" class="nav-link active">Emoji</a>
-            <li class="nav-item">
-            </li>  
-                <a href="#emojis" class="nav-link active">Emoji</a>
-            </li>
-            <li class="collapse">
-            </li>   
-                <a href="dropdown" class="nav-link active">Emoji</a>
-            </li>
-   
-   
-    </nav>
-
-    <!-- jumbotron -->
-    <div class="jumbotron">
-        <h1 class="display-4">bootstrap</h1>
-        <p>bootstrap is a css framework. it makes working
-        with css easier, especially when it comes to Responsive design</p>
-        <hr>
-        <button href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" class="btn
-        btn-danger">Documentation</button>
-    
-    
-    </div>
-
-
-    <!-- emojis  -->
-    <div class="container-fluid">
-        <div class="row">
-            <h2 class="section-header">Emojis</h2>
-        </div>        
-        <div class="row">
-            <div id="column-1" class="col-2 text-center">
-                <img class="icon "src="https://cdn.shopify.com/s/files/1/1061/1924/products/Slightly_Smiling_Emoji_Icon_34f238ed-d557-4161-b966-779d8f37b1ac_70x70.png?v=1485577096" alt="Emojis">
-            </div>
-            <div id="column-2" class="col-8 text-center">
-                <img class="icon" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Crying_Emoji_Icon_2_70x70.png?v=1485577094"Emojis">
-            </div>
-            <div id="column-3" class="col-2 text-center">
-               <img class="icon" src="https://cdn.shopify.com/s/files/1/1061/1924/files/9_70x70.png?10625385272054259166" alt="Emojis">
+    <!-- Collapse -->
+    <div class="collapse fixed-top bg-dark" id="mobileNavbar">
+        <div class="container mobile-menu-wrapper">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group mt-5 text-right">
+                        <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+                            <a href="#emojis">Emojis</a>
+                        </li>
+                        <li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+                            <a href="#alerts">Alerts</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">
+                <img height="30" src="http://static1.squarespace.com/static/55c4ffcfe4b0b6679a5a2ff5/t/55c927aee4b0389a4f23a090/1594054577323/?format=1500w" alt="">
+            </a>
 
-    <!-- Alerts -->
+            <!-- Mobile -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mobileNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Desktop -->
+            <ul class="nav d-none">
+                <li class="nav-item">
+                    <a href="#emojis" class="nav-link active">Emoji</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#alerts" class="nav-link active">Alerts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#carousel" class="nav-link active">Carousel</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#forms" class="nav-link active">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#modal" class="nav-link active">Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#collapse" class="nav-link active">Collapse</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#dropdown" class="nav-link active">Dropdown</a>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- Carousel -->
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid py-5">
+            <div class="container-fluid">
+                <h1 class="display-4">Bootstrap</h1>
+                <p>Bootstrap is a CSS Framework. It makes working with CSS easier, 
+                especially when it comes to Responsive Design</p>
+                <hr>
+                <button href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" class="btn btn-danger">Documentation</button>
+            </div>
+        </div>
 
-    <!-- Forms -->
+    <!-- Container -->
+    <div class="container-fluid">
 
-    <!-- modal -->
+        <!-- Emojis -->
+        <div id="emojis" class="row">
+            <h2 class="section-header">Emojis</h2>
+        </div>
+        <div class="row">
+            <div id="column-1" class="col-2 text-center">
+                <img class="icon" width="40"  src="https://cdn.shopify.com/s/files/1/1061/1924/files/Tongue_Out_Emoji_3_70x70.png?13752525173949329807" alt="emoji">
+            </div>
+            <div id="column-2" class="col-8 text-center">
+                <img class="icon" width="40"  src="https://cdn.shopify.com/s/files/1/1061/1924/products/Slightly_Smiling_Emoji_Icon_34f238ed-d557-4161-b966-779d8f37b1ac_70x70.png?v=1485577096" alt="emoji">
+            </div>
+            <div id="column-3" class="col-2 text-center">
+                <img class="icon" width="40" src="https://cdn.shopify.com/s/files/1/1061/1924/files/9_70x70.png?10625385272054259166" alt="emoji">
+            </div>      
+        </div>
 
-    <!-- collapse -->
+        <!-- Alerts -->
+        <div id="alerts" class="row">
+            <h2 class="section-header">Alerts</h2>
+        </div>
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <strong>.alert-primary</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>.alert-danger</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>.alert-success</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
 
-    <!-- dropdown -->
+        <!-- Buttons -->
+        <div id="buttons" class="row">
+            <h2 class="section-header">Buttons</h2>
+        </div>
+        <div class="row">
+            <button class="btn mr-2 btn-primary">Button</button>
+            <button class="btn mr-2 btn-outline-primary">Outline</button>
+            <button class="btn mr-2 btn-danger">Danger</button>
+            <button class="btn mr-2 btn-success">Success</button>
+            <button class="btn mr-2 mt-2 btn-info btn-block">Block</button>
+        </div>
 
+        <!-- Cards -->
+        <div id="cards" class="row">
+            <h2 class="section-header">Cards</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-sm-6 mb-5">
+                <div class="card" style="width: auto;">
+                    <div class="card-header">Sunset</div>
+                    <img src="https://picography.co/wp-content/uploads/2019/06/picography-golden-mountain-sunset-sky-clouds-light-900x600.jpg" 
+                    class="card-img-top" 
+                    alt="Sunset Image">
+                    <div class="card-body">
+                        <h5 class="card-title"> Sunset</h5>
+                        <p class="card-text">This Sunset looks pretty cool over the mountains</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 mb-5">
+                <div class="card" style="width: auto;">
+                    <div class="card-header">Detroit Skyline</div>
+                    <img src="https://traknetsolutions.com/wp-content/uploads/2019/11/detroit-skyline-linda-goodhue-photography.jpg" 
+                    class="card-img-top" 
+                    alt="Detroit Image">
+                    <div class="card-body">
+                        <h5 class="card-title"> Detroit</h5>
+                        <p class="card-text">The buildings in Detroit look pretty cool.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="exampleModal">
+
+            <!-- 
+                Modal Dialog
+                    Modal Content
+                        Modal Header 
+                             Modal Title & Close Button
+                        Modal Body
+                        Modal Footer
+             -->
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <p>This is the Modal's Body. Information goes here.</p>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Carousel -->
+        <div class="row" id="carousel">
+            <h1 class="section-header">Carousel</h1>
+        </div>
+
+            <!-- Carousel-->
+                <!-- Carousel indicators-->
+                <!-- Carousel inner-->
+                    <!-- Carousel item(s)-->
+                    <!-- Carsouel Conttrol prev/next
+            -->
+
+            <div id="carouselExampControls" class="carousel slide"
+            data-ride="Carsouel">
+                <div class="carousel-indicators">
+                </div>
+
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption"></div>
+                                <h5>Slide 1</h5>
+                            </div>
+                            <img src="https://1.bp.blogspot.com/-284zVHSSNdU/Xkws-rEkenI/AAAAAAAA1UE/rGYdlnijghw6-wqFh45sYXYFbCZUEngdQCEwYBhgL/s1600/sunset_3.jpg" alt="" class="d-block w-100">
+                    
+                    </div>
+                     <div class="carousel-item">
+                      <div class="carousel-caption"></div>
+                                <h5>Slide 2</h5>
+                            </div>
+                            <img src="https://1.bp.blogspot.com/-284zVHSSNdU/Xkws-rEkenI/AAAAAAAA1UE/rGYdlnijghw6-wqFh45sYXYFbCZUEngdQCEwYBhgL/s1600/sunset_3.jpg" alt="" class="d-block w-100">
+                    
+                    
+                    
+                    </div>
+                    <div class="carousel-item">
+                     <div class="carousel-caption"></div>
+                                <h5>Slide 3</h5>
+                            </div>
+                            <img src="https://1.bp.blogspot.com/-284zVHSSNdU/Xkws-rEkenI/AAAAAAAA1UE/rGYdlnijghw6-wqFh45sYXYFbCZUEngdQCEwYBhgL/s1600/sunset_3.jpg" alt="" class="d-block w-100">
+                    
+
+                
+                </div>
+                    <div class="carousel-inner">
+                
+                </div>
+
+            </div>
+
+
+        <!-- Forms -->
     </div>
 
-
-    <!-- <div class="container-sm">100% wide until small breakpoint ≥992px</div>
-    <div class="container-md">100% wide until medium breakpoint ≥992px</div>
-    <div class="container-lg">100% wide until large breakpoint ≥992px</div>
-    <div class="container-xl">100% wide until extra large breakpoint ≥992px	</div> -->
+    <!-- <div class="container-sm">100% wide until small breakpoint ≥ 576px</div>
+    <div class="container-md">100% wide until medium breakpoint ≥ 768px</div>
+    <div class="container-lg">100% wide until large breakpoint ≥ 992px</div>
+    <div class="container-xl">100% wide until extra large breakpoint ≥ 1200px</div> -->
     
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
